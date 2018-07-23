@@ -1,0 +1,357 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  -webkit-animation: move;
+  animation: move;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1; }
+  body:hover .hello {
+    opacity: 1;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+  body .hello {
+    margin: 5% auto 0 auto;
+    width: 20%;
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    body .hello:before {
+      content: 'Hello!';
+      color: #1d6797;
+      padding: 20% 30%;
+      background: yellow;
+      border-radius: 50%;
+      font-size: 70px; }
+  body .body {
+    position: relative;
+    top: 0;
+    margin: 5% auto 0 auto;
+    width: 25%;
+    padding-bottom: 25%;
+    background: #EDD728;
+    border-radius: 45% 45% 0% 0%; }
+    body .body:hover .mouse {
+      padding-bottom: 16%; }
+    body .body .glasses_belt {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      margin-top: 32%;
+      background: #191A19;
+      height: 10%;
+      width: 100%;
+      border-radius: 40% 40% 0 0; }
+    body .body .glasses {
+      position: absolute;
+      top: 0;
+      margin-top: 17%;
+      z-index: 5;
+      width: 40%;
+      height: 40%;
+      border-radius: 50%;
+      background: #87888D; }
+      body .body .glasses_left {
+        left: 11%; }
+      body .body .glasses_right {
+        right: 11%; }
+    body .body .eyes {
+      position: relative;
+      background: #fff;
+      width: 70%;
+      height: 70%;
+      margin: 50% auto;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      border-radius: 50%; }
+    body .body .eyeball {
+      position: absolute;
+      border-radius: 50%; }
+      body .body .eyeball_Coffeleft {
+        background: #624959;
+        left: 35%;
+        width: 50%;
+        height: 50%;
+        top: 25%; }
+      body .body .eyeball_Cofferight {
+        background: #624959;
+        right: 35%;
+        width: 50%;
+        height: 50%;
+        top: 25%; }
+      body .body .eyeball_Blackleft {
+        background: #000;
+        left: 43%;
+        width: 35%;
+        height: 35%;
+        top: 32%; }
+      body .body .eyeball_Blackright {
+        background: #000;
+        right: 43%;
+        width: 35%;
+        height: 35%;
+        top: 32%; }
+      body .body .eyeball_Whiteleft {
+        background: #fff;
+        left: 43%;
+        width: 10%;
+        height: 10%;
+        top: 32%; }
+      body .body .eyeball_Whiteright {
+        background: #fff;
+        left: 24%;
+        width: 10%;
+        height: 10%;
+        top: 32%; }
+    body .body .mouse {
+      position: absolute;
+      top: 72%;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      width: 24%;
+      padding-bottom: 1%;
+      background: #624959;
+      border-radius: 0 0 50% 50%;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+    body .body .pantsbelt {
+      position: absolute;
+      bottom: 5px;
+      width: 32%;
+      padding-bottom: 6%;
+      background: #3F95CE; }
+      body .body .pantsbelt_left {
+        left: -3%;
+        -webkit-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+        transform: rotate(30deg);
+        border-radius: 30% 0 0 30%; }
+      body .body .pantsbelt_right {
+        right: -3%;
+        -webkit-transform: rotate(-30deg);
+        -ms-transform: rotate(-30deg);
+        transform: rotate(-30deg);
+        border-radius: 0 30% 30% 0; }
+    body .body .hand {
+      position: absolute;
+      bottom: 7%;
+      width: 56%;
+      padding-bottom: 8%;
+      background: #EDD728; }
+      body .body .hand_left {
+        left: -43%;
+        -webkit-transform: rotate(46deg);
+        -ms-transform: rotate(46deg);
+        transform: rotate(46deg);
+        border-radius: 30% 0 0 30%; }
+      body .body .hand_right {
+        right: -43%;
+        -webkit-transform: rotate(-46deg);
+        -ms-transform: rotate(-46deg);
+        transform: rotate(-46deg);
+        border-radius: 0 30% 30% 0; }
+    body .body .gloves {
+      position: absolute;
+      bottom: 23%;
+      width: 10%;
+      padding-bottom: 10%;
+      background: #0B0B0B; }
+      body .body .gloves_left {
+        left: -36%;
+        -webkit-transform: rotate(46deg);
+        -ms-transform: rotate(46deg);
+        transform: rotate(46deg);
+        border-radius: 40% 10% 10% 40%; }
+      body .body .gloves_right {
+        right: -36%;
+        -webkit-transform: rotate(-46deg);
+        -ms-transform: rotate(-46deg);
+        transform: rotate(-46deg);
+        border-radius: 10% 40% 40% 10%; }
+    body .body .palm {
+      position: absolute;
+      bottom: 25%;
+      width: 12%;
+      padding-bottom: 12%;
+      background: #0B0B0B;
+      border-radius: 50%; }
+      body .body .palm_left {
+        left: -40%;
+        -webkit-transform: rotate(46deg);
+        -ms-transform: rotate(46deg);
+        transform: rotate(46deg); }
+      body .body .palm_right {
+        right: -40%;
+        -webkit-transform: rotate(-46deg);
+        -ms-transform: rotate(-46deg);
+        transform: rotate(-46deg); }
+    body .body .finger {
+      position: absolute;
+      bottom: 26%;
+      width: 13%;
+      padding-bottom: 20%; }
+      body .body .finger_left {
+        left: -45%;
+        -webkit-transform: rotate(46deg);
+        -ms-transform: rotate(46deg);
+        transform: rotate(46deg); }
+        body .body .finger_left .fingerLeft {
+          position: absolute;
+          background: #0B0B0B;
+          width: 71%;
+          padding-bottom: 40%;
+          border-radius: 40% 0 0 40%; }
+          body .body .finger_left .fingerLeft_1 {
+            -webkit-transform: rotate(49deg);
+            -ms-transform: rotate(49deg);
+            transform: rotate(49deg);
+            left: 36%;
+            bottom: 74%; }
+          body .body .finger_left .fingerLeft_2 {
+            -webkit-transform: rotate(-9deg);
+            -ms-transform: rotate(-9deg);
+            transform: rotate(-9deg);
+            left: 6%;
+            bottom: 38%; }
+          body .body .finger_left .fingerLeft_3 {
+            -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            left: 31%;
+            bottom: 3%; }
+      body .body .finger_right {
+        right: -45%;
+        -webkit-transform: rotate(134deg);
+        -ms-transform: rotate(134deg);
+        transform: rotate(134deg); }
+        body .body .finger_right .fingerRight {
+          position: absolute;
+          background: #0B0B0B;
+          width: 71%;
+          padding-bottom: 40%;
+          border-radius: 40% 0 0 40%; }
+          body .body .finger_right .fingerRight_1 {
+            -webkit-transform: rotate(28deg);
+            -ms-transform: rotate(28deg);
+            transform: rotate(28deg);
+            right: 15%;
+            bottom: 66%; }
+          body .body .finger_right .fingerRight_2 {
+            -webkit-transform: rotate(3deg);
+            -ms-transform: rotate(3deg);
+            transform: rotate(3deg);
+            right: 34%;
+            bottom: 33%; }
+          body .body .finger_right .fingerRight_3 {
+            -webkit-transform: rotate(-57deg);
+            -ms-transform: rotate(-57deg);
+            transform: rotate(-57deg);
+            right: -9%;
+            bottom: -3%; }
+  body .body_part {
+    margin: 0 auto;
+    width: 25%;
+    background: #EDD728;
+    border-radius: 0 0 45% 45%; }
+    body .body_part .pants_part {
+      margin-left: 25%;
+      width: 50%;
+      background: #3F95CE;
+      border-radius: 15% 15% 0 0;
+      padding-top: 5%; }
+      body .body_part .pants_part .pant_pocket {
+        background: #41a4e6;
+        width: 60%;
+        padding-bottom: 30%;
+        margin: 0 auto 0 auto;
+        border-radius: 0 0 50% 50%; }
+    body .body_part .pants {
+      width: 100%;
+      padding-bottom: 40%;
+      background: #3F95CE;
+      border-radius: 0 0 40% 40%; }
+  body .legs {
+    position: relative;
+    margin: 0 auto;
+    width: 25%; }
+    body .legs .leg {
+      position: absolute;
+      top: 0;
+      margin-top: -7%;
+      background: #3F95CE;
+      width: 7%;
+      padding-bottom: 25%; }
+      body .legs .leg_left {
+        left: 30%;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s; }
+      body .legs .leg_right {
+        right: 30%; }
+    body .legs .shoes {
+      position: absolute;
+      top: 0;
+      margin-top: 10%;
+      background: #0B0B0B;
+      width: 18%;
+      padding-bottom: 10%; }
+      body .legs .shoes_left {
+        left: 19%;
+        border-radius: 120% 0 0 30%; }
+      body .legs .shoes_right {
+        right: 19%;
+        border-radius: 0 120% 30% 0; }
